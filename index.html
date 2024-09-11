@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Header</title>
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <style>
+   
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="header d-flex justify-content-between align-items-center flex-wrap">
+    <!-- Left Side: Email and Phone -->
+    <div class="contact-info">
+      <a href="mailto:info@example.com"><i class="fas fa-envelope"></i> info@example.com</a>
+      <a href="tel:+911234567890"><i class="fas fa-phone-alt"></i> +91 12345 67890</a>
+    </div>
+
+    <!-- Right Side: Social Icons -->
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </header>
+
+
+   <!-- Contact Section -->
+   <section class="contact-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Side: Image -->
+        <div class="col-md-6">
+          <img src="assets/images/Black and Yellow Simple Webinar Event Instagram Post (1).png" alt="Contact Image" class="contact-img">
+          <div class=" mt-4">
+            <h2 style="font-size: 28px; color: #004080; font-weight: bold;">Start Your Business Journey with Confidence!</h2>
+            <p style="font-size: 16px; color: #555;">
+                Register your company <span style="color: #ff6600; font-weight: bold;">hassle-free</span> with <span style="color: #28a745; font-weight: bold;">expert guidance</span> every step of the way. 
+                From <span style="color: #004080; font-weight: bold;">paperwork to approvals</span>, we’ve got you covered—<span style="color: #ff6600; font-weight: bold;">fast</span>, 
+                <span style="color: #004080; font-weight: bold;">reliable</span>, and <span style="color: #28a745; font-weight: bold;">secure</span>.
+            </p>
+        </div>
+        </div>
+        <div class="col-md-2"></div>
+        <!-- Right Side: Contact Form -->
+        <div class="col-md-4">
+          <div class="contact-form">
+            <h3 class="text-center">
+                <span style="color: #004080; font-weight: bold;">Fill Out Your Details</span> to Receive a <span style="color: #ff6600; font-weight: bold;">Comprehensive Quote</span> Directly to Your Email and Enjoy a <span style="color: #28a745; font-weight: bold;">Complimentary Expert Consultation!</span>
+              </h3>
+              
+              <form action="send_email.php" method="post">
+                <!-- Full Name -->
+                <div class="form-group">
+                    <input type="text" name="full_name" class="form-control" placeholder="Full Name" required>
+                </div>
+            
+                <!-- Email -->
+                <div class="form-group">
+                    <input type="email" name="email" class="form-control" placeholder="Email" required>
+                </div>
+            
+                <!-- Mobile Number -->
+                <div class="form-group">
+                    <input type="tel" name="mobile_number" class="form-control" placeholder="Mobile Number" required>
+                </div>
+            
+                <!-- State Dropdown -->
+                <div class="form-group">
+                    <select name="state" class="form-select" required>
+                        <option value="">Select State</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                    </select>
+                </div>
+            
+                <!-- Submit Button -->
+                <div class="text-center">
+                    <button type="submit" class="btn">Get Details & Quote Now</button>
+                </div>
+            </form>
+            
+          </div>
+          <div class="text-center mt-4">
+            <h3 style="font-size: 24px; color: #004080; font-weight: bold;">Why Choose Us?</h3>
+            <p style="font-size: 16px; color: #555;">
+                Experience a <span style="color: #ff6600; font-weight: bold;">Seamless Registration Process</span> with 
+                <span style="color: #28a745; font-weight: bold;">Expert Support</span> every step of the way. 
+                Let us handle the <span style="color: #004080; font-weight: bold;">complexities</span> while you focus on 
+                <span style="color: #ff6600; font-weight: bold;">growing your business</span>. 
+                Your success is our priority!
+            </p>
+        </div>
+        
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- registration step -->
+  <h2 class="timeline-heading text-center mt-5">Private Limited Company Registration in <span class="highlight-text">4 Easy Steps</span></h2>
+
+  <ul>
+      <li style="--accent-color:#41516C">
+          <div class="date">Consultation</div>
+          <div class="descr">Speak to our experts for a free consultation and get insights about the process.</div>
+      </li>
+      <li style="--accent-color:#FBCA3E">
+          <div class="date">Step 2: Submit Documents</div>
+          <div class="descr">Upload all necessary documents for hassle-free paperwork completion.</div>
+      </li>
+      <li style="--accent-color:#E24A68">
+          <div class="date">Step 3: Application Filing</div>
+          <div class="descr">We file the company registration application and track its status.</div>
+      </li>
+      <li style="--accent-color:#1B5F8C">
+          <div class="date">Step 4: Receive Certification</div>
+          <div class="descr">Get your certification and start operating your Private Limited Company.</div>
+      </li>
+      
+  </ul>
+
+
+  <!-- benefits of private limited company -->
+
+  <section class="benefits-private-limited">
+    <h2>Benefits of Private Limited Company Registration</h2>
+    <div class="benefits-container">
+        <div class="benefit-item">
+            <i class="fas fa-shield-alt"></i>
+            <h3>Limited Liability Protection</h3>
+            <p>Personal assets are protected as shareholders' liabilities are limited to their shareholding.</p>
+        </div>
+        <div class="benefit-item">
+            <i class="fas fa-building"></i>
+            <h3>Separate Legal Entity</h3>
+            <p>The company is an independent entity, offering stability and continuity.</p>
+        </div>
+        <div class="benefit-item">
+            <i class="fas fa-hand-holding-usd"></i>
+            <h3>Easy Fundraising</h3>
+            <p>Raising capital becomes easier due to structured business and credibility.</p>
+        </div>
+        <div class="benefit-item">
+            <i class="fas fa-check-circle"></i>
+            <h3>Credibility & Trust</h3>
+            <p>Builds trust with customers, vendors, and financial institutions.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Documents required For Private Limited Company Registration start -->
+ <!-- Documents Required Section -->
+<section class="documents-required py-5">
+  <div class="container">
+      <h2 class="text-center mb-4">Documents Required for Private Limited Company Registration</h2>
+      <div class="row">
+          <!-- Card 1 -->
+          <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card shadow-sm">
+                  <div class="card-body text-center">
+                      <i class="fas fa-id-card fa-3x text-primary mb-3"></i>
+                      <h5 class="card-title">PAN Card</h5>
+                      <p class="card-text">PAN Card of all Indian directors and shareholders is mandatory.</p>
+                  </div>
+              </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card shadow-sm">
+                  <div class="card-body text-center">
+                      <i class="fas fa-fingerprint fa-3x text-primary mb-3"></i>
+                      <h5 class="card-title">Aadhaar Card</h5>
+                      <p class="card-text">Aadhaar Card for identification and address proof is required.</p>
+                  </div>
+              </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card shadow-sm">
+                  <div class="card-body text-center">
+                      <i class="fas fa-id-badge fa-3x text-primary mb-3"></i>
+                      <h5 class="card-title">Voter ID / Passport / Driving License</h5>
+                      <p class="card-text">Any one of these as an additional identity proof is necessary.</p>
+                  </div>
+              </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card shadow-sm">
+                  <div class="card-body text-center">
+                      <i class="fas fa-home fa-3x text-primary mb-3"></i>
+                      <h5 class="card-title">Residential Proof</h5>
+                      <p class="card-text">Submit bank statement, electricity bill, or telephone bill (not older than 2 months).</p>
+                  </div>
+              </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card shadow-sm">
+                  <div class="card-body text-center">
+                      <i class="fas fa-file-alt fa-3x text-primary mb-3"></i>
+                      <h5 class="card-title">Rent Agreement</h5>
+                      <p class="card-text">Required if the office premises are rented.</p>
+                  </div>
+              </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card shadow-sm">
+                  <div class="card-body text-center">
+                      <i class="fas fa-file-signature fa-3x text-primary mb-3"></i>
+                      <h5 class="card-title">NOC from Property Owner</h5>
+                      <p class="card-text">No Objection Certificate to use the premises as the company’s office.</p>
+                  </div>
+              </div>
+          </div>
+          <!-- Card 7 -->
+          <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card shadow-sm">
+                  <div class="card-body text-center">
+                      <i class="fas fa-file-invoice fa-3x text-primary mb-3"></i>
+                      <h5 class="card-title">Utility Bill</h5>
+                      <p class="card-text">Latest utility bill as proof of registered office address.</p>
+                  </div>
+              </div>
+          </div>
+          <!-- Card 8 -->
+          <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card shadow-sm">
+                  <div class="card-body text-center">
+                      <i class="fas fa-passport fa-3x text-primary mb-3"></i>
+                      <h5 class="card-title">Passport (Foreign Nationals)</h5>
+                      <p class="card-text">Foreign directors/shareholders must provide their passport.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- reviews for customer -->
+
+<div class="testimonials">
+  <h2 class=" " style="color: #004080;">Hear What Our Clients Say</h2>
+  <div class="owl-carousel owl-theme">
+      <div class="item">
+          <div class="logo">
+              <img src="assets/images/Google_Icons-09-512.webp" alt="Google Maps Logo" class="logogoogle">
+          </div>
+          <div class="review-rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-alt"></i>
+          </div>
+          <div class="review-text">
+              "Excellent service! The team was very professional and helped me through every step of the process."
+          </div>
+          <div class="review-author">John Doe</div>
+      </div>
+      <div class="item">
+          <div class="logo">
+              <img src="assets/images/Google_Icons-09-512.webp" alt="Google Maps Logo">
+          </div>
+          <div class="review-rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+          </div>
+          <div class="review-text">
+              "Exceptional experience! Fast, reliable, and knowledgeable. Highly recommend this company."
+          </div>
+          <div class="review-author">Jane Smith</div>
+      </div>
+      <div class="item">
+          <div class="logo">
+              <img src="assets/images/Google_Icons-09-512.webp" alt="Google Maps Logo">
+          </div>
+          <div class="review-rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-alt"></i>
+          </div>
+          <div class="review-text">
+              "Very satisfied with the service. The staff was friendly and the process was smooth and efficient."
+          </div>
+          <div class="review-author">Michael Johnson</div>
+      </div>
+      <div class="item">
+          <div class="logo">
+              <img src="assets/images/Google_Icons-09-512.webp" alt="Google Maps Logo">
+          </div>
+          
+          <div class="review-rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+          </div>
+          <div class="review-text">
+              "Outstanding support and service. The team went above and beyond to ensure everything was perfect."
+          </div>
+          
+          <div class="review-author">Emily Davis</div>
+      </div>
+  </div>
+</div>
+
+ <!-- end reviews customer -->
+
+
+
+
+
+
+ <!-- Documents required For Private Limited Company Registration end -->
+
+
+
+<!-- why choose us -->
+<section id="why-choose-us" class="py-5 bg-light">
+  <div class="container">
+      <h2 class="text-center mb-5">Why Choose Us?</h2>
+      <div class="row">
+          <!-- Reason 1 -->
+          <div class="col-md-4">
+              <div class="why-card text-center p-4 mb-4">
+                  <i class="fas fa-shield-alt fa-3x mb-3 text-primary"></i>
+                  <h5 class="mb-3">Trusted & Reliable</h5>
+                  <p>We offer dependable services with years of experience in the industry. Your business is in safe hands.</p>
+              </div>
+          </div>
+          <!-- Reason 2 -->
+          <div class="col-md-4">
+              <div class="why-card text-center p-4 mb-4">
+                  <i class="fas fa-users fa-3x mb-3 text-primary"></i>
+                  <h5 class="mb-3">Expert Team</h5>
+                  <p>Our highly qualified professionals ensure that your registration process is seamless and efficient.</p>
+              </div>
+          </div>
+          <!-- Reason 3 -->
+          <div class="col-md-4">
+              <div class="why-card text-center p-4 mb-4">
+                  <i class="fas fa-clock fa-3x mb-3 text-primary"></i>
+                  <h5 class="mb-3">Quick Turnaround</h5>
+                  <p>Time is of the essence, and we ensure that your company registration is done in the shortest possible time.</p>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <!-- Reason 4 -->
+          <div class="col-md-4">
+              <div class="why-card text-center p-4 mb-4">
+                  <i class="fas fa-money-bill-wave fa-3x mb-3 text-primary"></i>
+                  <h5 class="mb-3">Affordable Pricing</h5>
+                  <p>We offer the best market rates without compromising on quality service.</p>
+              </div>
+          </div>
+          <!-- Reason 5 -->
+          <div class="col-md-4">
+              <div class="why-card text-center p-4 mb-4">
+                  <i class="fas fa-thumbs-up fa-3x mb-3 text-primary"></i>
+                  <h5 class="mb-3">Customer Satisfaction</h5>
+                  <p>Our clients' happiness is our top priority. We strive to exceed your expectations every time.</p>
+              </div>
+          </div>
+          <!-- Reason 6 -->
+          <div class="col-md-4">
+              <div class="why-card text-center p-4 mb-4">
+                  <i class="fas fa-handshake fa-3x mb-3 text-primary"></i>
+                  <h5 class="mb-3">Personalized Support</h5>
+                  <p>We offer personalized solutions tailored to your business needs, ensuring a smooth process from start to finish.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+ <!-- why choose end -->
+<!-- our trusted start -->
+ 
+ <!-- our trusted partner end -->
+<!-- frequently ask question start -->
+<section id="faq" class="py-5 bg-light">
+  <div class="container">
+      <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+      <div class="accordion" id="faqAccordion">
+          <!-- FAQ Item 1 -->
+          <div class="card">
+              <div class="card-header d-flex justify-content-between align-items-center" id="headingOne">
+                  <h5 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          What is the process for registering a Private Limited Company?
+                      </button>
+                  </h5>
+                  <button class="btn btn-info btn-sm toggle-btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <i class="fa fa-chevron-down"></i>
+                  </button>
+              </div>
+
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                  <div class="card-body">
+                      The process involves several steps including name approval, submission of documents, and obtaining a certificate of incorporation. Detailed steps are available on our registration page.
+                      <!-- Additional Details -->
+                      <div class="extra-details collapse mt-3">
+                          <p>Additional details about the registration process can be found here. This section can include more specific steps or frequently asked questions related to the process.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+          
+          <!-- FAQ Item 2 -->
+          <div class="card">
+              <div class="card-header d-flex justify-content-between align-items-center" id="headingTwo">
+                  <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          How long does it take to register a company?
+                      </button>
+                  </h5>
+                  <button class="btn btn-info btn-sm toggle-btn" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <i class="fa fa-chevron-down"></i>
+                  </button>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                  <div class="card-body">
+                      The registration process typically takes 7-15 business days, depending on the completeness of the submitted documents and the processing time of the regulatory authorities.
+                      <!-- Additional Details -->
+                      <div class="extra-details collapse mt-3">
+                          <p>For a detailed timeline and possible delays, check our full guide on the registration process. We provide updates and support to ensure a smooth experience.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+          <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        What are the documents required for registration?
+
+                    </button>
+                </h5>
+                <button class="btn btn-info btn-sm toggle-btn" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <i class="fa fa-chevron-down"></i>
+                </button>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                <div class="card-body">
+                    Required documents typically include identity proofs, address proofs, and business-related documents such as a memorandum of association and articles of association.
+
+                    <!-- Additional Details -->
+                    <div class="extra-details collapse mt-3">
+                        <p>For a detailed timeline and possible delays, check our full guide on the registration process. We provide updates and support to ensure a smooth experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center" id="headingFour">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        What are the compliance requirements for a Private Limited Company?
+
+
+                    </button>
+                </h5>
+                <button class="btn btn-info btn-sm toggle-btn" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <i class="fa fa-chevron-down"></i>
+                </button>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                <div class="card-body">
+                    Compliance requirements include annual filing of financial statements, holding annual general meetings, and maintaining statutory registers.
+
+                    <!-- Additional Details -->
+                    <div class="extra-details collapse mt-3">
+                        <p>For a detailed timeline and possible delays, check our full guide on the registration process. We provide updates and support to ensure a smooth experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center" id="headingFive">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        How much is the registration fee for a Private Limited Company?
+
+
+                    </button>
+                </h5>
+                <button class="btn btn-info btn-sm toggle-btn" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <i class="fa fa-chevron-down"></i>
+                </button>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                <div class="card-body">
+                    The registration fee varies depending on the jurisdiction and the size of the company. It generally includes government fees and service charges.
+
+                    <!-- Additional Details -->
+                    <div class="extra-details collapse mt-3">
+                        <p>For a detailed timeline and possible delays, check our full guide on the registration process. We provide updates and support to ensure a smooth experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+          <!-- Add more FAQs as needed -->
+      </div>
+  </div>
+</section>
+
+
+ <!-- frequently ask end -->
+
+
+ <!-- our services start -->
+ <section id="our-services" class="py-5 bg-light">
+  <div class="container">
+      <h2 class="text-center mb-4">Our Services</h2>
+      <div class="row">
+          <!-- Service 1 -->
+          <div class="col-md-4 mb-4">
+              <div class="service-card">
+                  <img src="assets/images/17123109823814.jpg" alt="Taxation and Compliances" class="service-img">
+                  <h3>Taxation and Compliances</h3>
+                  <p>We provide comprehensive tax planning and compliance services to ensure your business meets all tax obligations efficiently and effectively. Our experts handle everything from tax return preparation to strategic tax planning.</p>
+              </div>
+          </div>
+          <!-- Service 2 -->
+          <div class="col-md-4 mb-4">
+              <div class="service-card">
+                  <img src="assets/images/17123110381664.jpg" alt="Goods and Service Tax" class="service-img">
+                  <h3>Goods and Service Tax</h3>
+                  <p>Our team specializes in GST compliance, helping you navigate the complexities of Goods and Service Tax. We offer services including GST registration, return filing, and advisory to keep you compliant and optimize your tax positions.</p>
+              </div>
+          </div>
+          <!-- Service 3 -->
+          <div class="col-md-4 mb-4">
+              <div class="service-card">
+                  <img src="assets/images/17123110953108.jpg" alt="International Taxation" class="service-img">
+                  <h3>International Taxation</h3>
+                  <p>We assist businesses with international tax planning, cross-border transactions, and compliance with global tax regulations. Our services ensure you manage risks and maximize opportunities in international markets.</p>
+              </div>
+          </div>
+          <!-- Service 4 -->
+          <div class="col-md-4 mb-4">
+              <div class="service-card">
+                  <img src="assets/images/17126580360691.jpeg" alt="Account Outsourcing & Bookkeeping" class="service-img">
+                  <h3>Account Outsourcing & Bookkeeping</h3>
+                  <p>Our outsourcing services cover all aspects of bookkeeping and accounting, allowing you to focus on core business activities. We offer accurate financial record-keeping, reporting, and analysis tailored to your needs.</p>
+              </div>
+          </div>
+          <!-- Service 5 -->
+          <div class="col-md-4 mb-4">
+              <div class="service-card">
+                  <img src="assets/images/17123340118306.jpg" alt="Audit and Assurance" class="service-img">
+                  <h3>Audit and Assurance</h3>
+                  <p>We provide thorough audit and assurance services to enhance the credibility of your financial statements. Our audits are designed to meet regulatory requirements and provide valuable insights into your financial operations.</p>
+              </div>
+          </div>
+          <!-- Service 6 -->
+          <div class="col-md-4 mb-4">
+              <div class="service-card">
+                  <img src="assets/images/17123340254862.jpg" alt="Company and LLP Compliances" class="service-img">
+                  <h3>Company and LLP Compliances</h3>
+                  <p>Our compliance services ensure your company or LLP adheres to all legal and regulatory requirements. We handle company secretarial tasks, regulatory filings, and maintain corporate governance standards.</p>
+              </div>
+          </div>
+          <!-- Service 7 -->
+          <div class="col-md-4 mb-4">
+              <div class="service-card">
+                  <img src="assets/images/17123124572233.jpeg" alt="Registration" class="service-img">
+                  <h3>Registration</h3>
+                  <p>We assist with the registration of new businesses, including company incorporation and LLP registration. Our services streamline the registration process and ensure compliance with legal requirements from the start.</p>
+              </div>
+          </div>
+          <!-- Service 8 -->
+          <div class="col-md-4 mb-4">
+              <div class="service-card">
+                  <img src="assets/images/17126583723849.jpeg" alt="Intellectual Property Rights" class="service-img">
+                  <h3>Intellectual Property Rights</h3>
+                  <p>Protect your innovations and creative works with our intellectual property services. We provide guidance on trademarks, patents, copyrights, and other IP rights to secure and leverage your intellectual assets.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+  <!-- our services end -->
+  <footer>
+    <div class="footer-container">
+        <!-- Social Media Icons -->
+        <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="footer-disclaimer">
+            <p>© 2024 Company Name. All Rights Reserved. This site is for informational purposes only and does not constitute legal advice.</p>
+        </div>
+
+        <!-- Address -->
+        <div class="footer-address">
+            <p>123 Business Street, City Name, State, 123456, Country</p>
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- WhatsApp and Call Buttons -->
+<a href="https://wa.me/your-whatsapp-number" class="whatsapp-btn" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+<a href="tel:+your-phone-number" class="call-btn">
+  <i class="fas fa-phone-alt"></i>
+</a>
+
+
+  <!-- Bootstrap JS and Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!-- Include jQuery and Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+  $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            items: 3,
+            loop: true,
+            margin: 20,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                1024: {
+                    items: 3
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>
