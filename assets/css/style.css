@@ -3,7 +3,7 @@
  .header {
     background-color: #004080;
     color: white;
-    padding: 10px 50px;
+    padding: 10px 20px;
   }
   .header a {
     color: white;
@@ -32,13 +32,20 @@
     }
   }
 
+  /* @media (max-width: 320px) {
+    .header .contact-info a {
+        font-size: 10px !important;
+        margin-right: 0;
+    }
+} */
+
   /* Responsive Design for Small Mobile Devices */
   @media (max-width: 576px) {
     .header {
-      padding: 10px 20px; /* Reduced padding for small devices */
+      padding: 4px 10px; /* Reduced padding for small devices */
     }
     .header .contact-info a {
-      font-size: 14px; /* Smaller text for email and phone */
+      font-size: 12px !important; /* Smaller text for email and phone */
       margin-right: 10px;
     }
     .social-icons a {
