@@ -1,72 +1,89 @@
-/* header1  */
- /* Custom styling */
- .header {
-    background-color: #004080;
-    color: white;
-    padding: 10px 20px;
+/* General Styles for Header */
+.header {
+  padding: 10px 20px;
+  background-color: #107ae4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap; /* Prevent wrapping of email and mobile number */
+}
+
+.contact-info a {
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+  white-space: nowrap; /* Ensure email and phone number stay on one line */
+}
+
+.contact-info a i {
+  margin-right: 5px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a {
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.social-icons a:hover {
+  color: goldenrod;
+}
+
+/* Media Query for Tablets (768px and below) */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-  .header a {
-    color: white;
-    text-decoration: none;
+
+  .contact-info {
+    justify-content: center;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+  }
+}
+
+/* Media Query for Mobile Phones (576px and below) */
+@media (max-width: 576px) {
+  .header {
+    padding: 15px;
+    flex-direction: column;
+  }
+
+  .contact-info {
+    justify-content: center;
+    flex-wrap: nowrap; /* Ensure no wrapping on mobile */
+  }
+
+  .contact-info a {
+    font-size: 0.9rem;
     margin-right: 15px;
   }
+
   .social-icons a {
-    font-size: 18px;
-    margin-right: 10px;
-  }
-  .social-icons a:hover {
-    color: #00aaff;
+    font-size: 1rem;
+    margin-left: 8px;
   }
 
-  /* Responsive Design for Tablets and Small Laptops */
-  @media (max-width: 768px) {
-    .header .contact-info {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-    }
-    .header .social-icons {
-      width: 100%;
-      text-align: center;
-      margin-top: 10px;
-    }
+  .social-icons {
+    margin-top: 10px;
   }
+}
 
-  /* @media (max-width: 320px) {
-    .header .contact-info a {
-        font-size: 10px !important;
-        margin-right: 0;
-    }
-} */
-
-  /* Responsive Design for Small Mobile Devices */
-  @media (max-width: 576px) {
-    .header {
-      padding: 4px 10px; /* Reduced padding for small devices */
-    }
-    .header .contact-info a {
-      font-size: 12px !important; /* Smaller text for email and phone */
-      margin-right: 10px;
-    }
-    .social-icons a {
-      font-size: 16px; /* Smaller social icon size */
-      margin-right: 8px;
-    }
-  }
-     /* Responsive Design for Small Mobile Devices */
-     @media (max-width: 320px) {
-    .header {
-    }
-    .header .contact-info a {
-      font-size: 13px; /* Smaller text for email and phone */
-      margin-right: 10px;
-    }
-    .social-icons a {
-      font-size: 16px; /* Smaller social icon size */
-      margin-right: 8px;
-    }
-  }
-/* end */
 
 /* section2 styele */
     /* Custom styling */
